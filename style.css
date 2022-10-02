@@ -93,6 +93,13 @@ svg{
 footer{
 text-align: center;
 }
+.attribution{
+  text-align: center;
+  font-size: 14px;
+}
+.attribution a{
+  text-decoration: none;
+}
 
 @media(min-width: 768px){
 #container{
