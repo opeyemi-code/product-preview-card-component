@@ -5,8 +5,8 @@
 }
 body{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: hsl(30, 38%, 92%)
@@ -19,7 +19,6 @@ body{
     border-radius: 10px;
     height: auto;
     margin: 15px;
-    box-sizing: border-box;
 }
 #image-container{
    background-image: url('images/image-product-mobile.jpg');
@@ -92,26 +91,18 @@ svg{
     padding-right: 5px;
 }
 
-.attribution{
-font-size: 12px;
-text-align: center;
-}
-
-.attribution a{
-text-decoration: none;
 
 @media(min-width: 768px){
 #container{
 display: flex;
 height: auto;
 font-size: 40px;
-max-width: 60%;
+width: 50%;
 
 }
 #main{
   width: 50%;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 #image-container{
   width: 50%;
