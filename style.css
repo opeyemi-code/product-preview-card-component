@@ -9,30 +9,38 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: hsl(30, 38%, 92%)
-;
+    background-color: hsl(30, 38%, 92%);
 }
 #container{
     background-color: hsl(0, 0%, 100%);
     font-family: 'Fraunces', serif;
     color: hsl(228, 12%, 48%);
     border-radius: 10px;
-    height: auto;
+    height: 100vh;
+    max-width: 500px;
     margin: 15px;
+    border-box: box-sizing;
 }
-#image-container{
-   background-image: url('images/image-product-mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.image-container{
     height: 200px;
-border-radius: 10px 10px 0 0;
 }
+picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+  }
+  picture img {
+   object-fit: cover; 
+      height: auto;
+      width:100%;
+      border-radius: 10px 10px 0 0;
+  }
 
-#header{
+.header{
     padding: 10px;
 }
-#header p{
+.header p{
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -44,27 +52,29 @@ h2{
 }
 
 
-#main{
+.main{
     padding: 20px;
 }
 p{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 #x p{
     padding: 15px 0;
 }
 
-#price{
+.price p{
     color: seagreen;
     font-weight: bold;
     font-size: 30px;
     display: flex;
     justify-content: centers;
+    font-family: 'Fraunces', serif;
+    
 }
 
-span{
-    text-decoration: line-through;
+del{
     color: hsl(228, 12%, 48%);
     padding-left: 30px;
     font-size: 14px;
@@ -104,23 +114,30 @@ text-align: center;
 @media(min-width: 768px){
 #container{
 display: flex;
-height: auto;
-font-size: 40px;
-width: 50%;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+max-height: 500px;
+max-width: 550px;
 
 }
-#main{
+.main{
   width: 50%;
-  margin: 0 auto;
-}
-#image-container{
-  width: 50%;
-  background-image: url('images/image-product-desktop.jpg');
   height: auto;
-  border-radius: 10px 0 0 10px;
-
+margin: 0 10px;
 }
-button{
-  margin-top: -20px
+.image-container{
+    height: 100%;
 }
+  picture {
+    width: 100%;
+    height: 100%;
+   
+  }
+  picture img {
+   object-fit: cover; 
+      height: 100%;
+      width:100%;
+    border-radius: 10px 0 0 10px;
+  }
 }
